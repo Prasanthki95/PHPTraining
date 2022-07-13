@@ -1,0 +1,31 @@
+Select * from table_name;
+
+Select * From table_name where condition;
+
+select name,id From table_name;
+
+select * from table_name where conditon1 and condition2;
+
+select * from table_name where conditon1 or condition2;
+
+select * from table_name where Not conditon1;
+
+Select * from table_name Order by column_name Asc;
+
+Select * from table_name Order by column_name Desc;
+
+Insert Into table_name(column1,column2,...) values(value1,value2,...);
+
+Select * from table_name where Is Null;
+
+Select * from table_name where Is Not Null;
+
+update table_name set column1 = value1, column2 = value2 where condition;
+
+Delete from table_name where condition;
+
+Select * from table_name where condition Limit 3;
+
+select Min(column_name) From table_name;
+
+select Max(column_name) From table_name;

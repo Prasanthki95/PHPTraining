@@ -1,0 +1,39 @@
+INSERT INTO Mysql_test.Mysql_practice( Name, Country, Age) VALUES('Prasanth','India','24');
+
+SELECT * FROM Mysql_test.Mysql_practice;
+
+SELECT Name,Age FROM Mysql_test.Mysql_practice;
+
+SELECT * FROM Mysql_test.Mysql_practice where Name="Prasanth";
+
+SELECT * FROM Mysql_test.Mysql_practice where Not Name="Prasanth";
+
+Delete From Mysql_test.Mysql_practice where id=1;
+
+INSERT INTO Mysql_test.Mysql_practice( Name, Country, Age) VALUES('Prasanth','India','24');
+
+INSERT INTO Mysql_test.Mysql_practice( Name, Country, Age) VALUES('Dhanush','India','25');
+
+INSERT INTO Mysql_test.Mysql_practice( Name, Country, Age) VALUES('Steve','India','30');
+
+update Mysql_test.Mysql_practice set Name="Ashwin" where id=4;
+
+Select * from Mysql_test.Mysql_practice Order by Name Asc;
+
+Select * from Mysql_test.Mysql_practice Order by Name desc;
+
+Select * from Mysql_test.Mysql_practice limit 2;
+
+Select * from Mysql_test.Mysql_practice limit 2,3;
+
+Select Min(Age) From Mysql_test.Mysql_practice;
+
+Select Max(Age) From Mysql_test.Mysql_practice;
+
+INSERT INTO Mysql_test.Mysql_practice( Name, Country) VALUES('Steve','India');
+
+SELECT * FROM Mysql_test.Mysql_practice;
+
+SELECT * FROM Mysql_test.Mysql_practice WHERE age Is Null;
+
+SELECT * FROM Mysql_test.Mysql_practice WHERE age Is Not Null;
