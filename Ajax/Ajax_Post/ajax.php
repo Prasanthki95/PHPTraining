@@ -20,8 +20,9 @@
 				document.getElementById("msg").innerHTML = this.responseText;
 			      }
 			    };
-			    xmlhttp.open("POST","phpconnect.php?q="+str,true);
-			    xmlhttp.send();
+			    xmlhttp.open("POST","phpconnect.php",true);
+			    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			    xmlhttp.send("q="+str);
 			  }
 		}
 	</script>

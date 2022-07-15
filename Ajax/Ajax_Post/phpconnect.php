@@ -3,9 +3,9 @@
 <body>
 	<?php
 		
-		include "connect.php";
+		$conn = mysqli_connect('localhost','i95dev','i95dev','Mysql_test');
 		
-		$q = intval($_GET['q']);
+		$q = intval($_POST['q']);
 		
 		$query = 'SELECT * FROM Mysql_practice where id='.$q;
 		
@@ -19,7 +19,7 @@
 		
 		echo "<table>
 		<tr>
-			<th>Name</th>
+			<th>Firstname</th>
 			<th>Country</th>
 			<th>Age</th>
 
