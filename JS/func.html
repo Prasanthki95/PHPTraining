@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<body onload="myfun()">
+
+<h2>JavaScript Objects</h2>
+
+<button id="myBtn" onclick=display() >Click Me !</button>
+
+<p id="demo"></p>
+
+<script>
+
+// const car = {type:"Fiat", model:"500", color:"white"};
+
+function myfun(){
+	alert("Hello welcome");
+}
+
+function display(){
+
+	document.getElementById("demo").innerHTML = "The car type is " + car.type;
+}
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+
+let fun1 = function(){
+	alert("This is from func1");
+}
+
+const fun2 = function(){
+	alert("This is from func2");
+}
+
+const arrowfun = ()=>{
+
+	alert("Hello from arrow");
+}
+
+const arrowfun1 = ()=>{
+
+	alert("Hello from arrow1");
+}
+
+document.getElementById("myBtn").addEventListener("click", arrowfun);
+
+</script>
+
+</body>
+
+</html>

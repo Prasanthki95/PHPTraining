@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<button id="myBtn" >Click Me !</button>
+
+<p id="demo"></p>
+
+<script>
+
+// const car = {type:"Fiat", model:"500", color:"white"};
+
+function myfun(){
+	alert("Hello welcome");
+}
+
+
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+
+
+
+const fun2 = function(){
+	alert("This is from func2");
+}
+
+const arrowfun = ()=>{
+
+	alert("Hello from arrow");
+}
+
+// document.getElementById("myBtn").addEventListener("click", displayDate);
+
+// document.getElementById("myBtn").addEventListener("click", arrowfun);
+
+
+// document.getElementById("myBtn").addEventListener("mouseover", myfun);
+
+document.getElementById("myBtn").addEventListener("mouseout", myfun);
+
+</script>
+
+</body>
+
+</html>
