@@ -35,5 +35,4 @@ echo $shirt2->color();
 ?>
 
 </body>
-
 </html>

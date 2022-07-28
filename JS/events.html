@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<body onload="displayDate()">
+
+<h2>JavaScript Events</h2>
+
+<button id="myBtn" >Click Me !</button>
+
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+
+<p id="demo"></p>
+
+<h3 id="h3tag"">SOme Heading is here !</h3>
+
+<script>
+
+    // const car = {type:"Fiat", model:"500", color:"white"};
+
+    function myfun(){
+        alert("Hello welcome");
+    }
+
+
+
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+
+
+    // document.getElementById("myBtn").onclick = displayDate;
+
+   // document.getElementById("myBtn").onload = displayDate;
+
+    function upperCase() {
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+
+    function syle(){
+
+        let y = document.getElementById("h3tag");
+        y.style.color = "red";
+    }
+
+
+    // document.getElementById("h3tag").onmouseover = syle;
+
+    // document.getElementById("h3tag").onmousedown = syle;
+
+    // document.getElementById("h3tag").onmouseup = syle;
+
+    document.getElementById("h3tag").onmouseleave = syle;
+
+</script>
+
+</body>
+
+</html>

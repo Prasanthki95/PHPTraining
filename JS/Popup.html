@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Alert</h2>
+
+<button onclick="myFunction()">Click Me !</button>
+
+<button onclick="alert('Hello\nHow are you?')">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        /*
+
+        alert("I am an alert box!");
+
+        var txt;
+        if (confirm("Press a button!")) {
+            txt = "You pressed OK!";
+        } else {
+            txt = "You pressed Cancel!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+
+         */
+
+        let person = prompt("Please enter your name", "Harry Potter");
+        let text;
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>

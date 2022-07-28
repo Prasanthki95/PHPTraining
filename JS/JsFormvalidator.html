@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Form validator</h2>
+
+<p id="demo"></p>
+
+<p class="age"></p>
+
+<h3></h3>
+
+<button onclick=display()>Click Me !</button>
+
+<form onsubmit="check()" name="form">
+    <label>Name : </label>
+
+    <input type="text" name="fname" required>
+
+    <input type="text" name="fname" disabled>
+
+    <input type="submit">
+
+</form>
+
+<script>
+
+  /*
+
+  function check(){
+        let x = document.forms['form']['fname'].value;
+
+        if(x==""){
+            alert("Please fill the name");
+        }
+    }
+
+   */
+
+  function check(){
+    // e.preventDefault();
+
+      let x = document.forms['form']['fname'].value;
+
+      if (isNaN(x) || x < 1 || x > 10) {
+          alert("Input not valid");
+      } else {
+          alert("Input OK");
+      }
+  }
+
+</script>
+
+</body>
+</html>
